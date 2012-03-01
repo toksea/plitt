@@ -11,7 +11,7 @@
 // ==/UserScript==
 
 (function(d) {
-	if (! d.forms[0].action.match(/search/)) return;
+	if (! (d.forms[0] && d.forms[0].action.match(/search/))) return;
 	var t = 0;
 	d.addEventListener('DOMSubtreeModified', function() {
 		if (!t) t = setTimeout(function() {
