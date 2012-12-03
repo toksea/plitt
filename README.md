@@ -1,5 +1,5 @@
 ## PLITT - Plain LInk To Target
-Allow visiting search result without the redirection overhead.
+Skip Google redirection, i.e, it allows visiting Google search result without the redirection overhead.
 
 Also available [here](http://userscripts.org/110750) on [userscripts.org](https://userscripts.org/).
 
@@ -16,3 +16,4 @@ Make sure you have necessary add-ons installed for your browser:
 * Chrome
 
     Plitt can work with Chrome via [TamperMonkey](https://code.google.com/p/tampermonkey/).
+
