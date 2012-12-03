@@ -14,7 +14,7 @@
 	if (! (d.forms[0] && d.forms[0].action.match(/search/))) return;
 	var t = 0;
 	d.addEventListener('DOMSubtreeModified', function() {
-		if (!t) t = setTimeout(function() {
+		if (t == 0) t = setTimeout(function() {
 			var a = d.getElementsByClassName('l');
 			if (a.length > d.getElementsByClassName('plitt').length) {
 				for (var i = 0; i < a.length; i++) {
