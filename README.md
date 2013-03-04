@@ -1,3 +1,5 @@
+[中文介绍见底部]
+
 ## PLITT - Plain LInk To Target
 Skip Google redirection, i.e, it allows visiting Google search result without the redirection overhead.
 
