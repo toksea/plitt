@@ -15,10 +15,10 @@
 	var t = 0;
 	d.addEventListener('DOMSubtreeModified', function() {
 		if (t == 0) t = setTimeout(function() {
-			var a = d.getElementsByClassName('l');
-			if (a.length > d.getElementsByClassName('plitt').length) {
-				for (var i = 0; i < a.length; i++) {
-					var l = a[i];
+			var r = d.getElementsByClassName('r');
+			if (r.length > d.getElementsByClassName('plitt').length) {
+				for (var i = 0; i < r.length; i++) {
+					var l = r[i].getElementsByTagName('a')[0];
 					if (l.previousElementSibling) continue;
 					l.insertAdjacentHTML("beforebegin",
 						"<a href='" + l.href + "' target='_blank' class='plitt'>[#" + i + "]</a>&nbsp;");
