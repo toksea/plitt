@@ -25,7 +25,16 @@
 				}
 			}
 			t = 0;
+
+			var plus_icons = d.getElementsByClassName('th');
+			for (var j = 0; j < plus_icons.length; j++) {
+				var icon = plus_icons[j];
+				var summary_with_plus = icon.parentNode.parentNode;
+				summary_with_plus.removeChild(summary_with_plus.firstChild);
+				var summary_content = summary_with_plus.firstChild;
+				summary_content.setAttribute('style', '');
+			}
+
 		}, 500);
 	}, false);
 })(document);
-
