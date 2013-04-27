@@ -21,7 +21,7 @@
 					var l = a[i];
 					if (l.previousElementSibling) continue;
 					l.insertAdjacentHTML("beforebegin",
-						"<a href='" + l.href + "' target='_blank' class='plitt'>[#]</a>&nbsp;");
+						"<a href='" + l.href + "' target='_blank' class='plitt'>[#" + i + "]</a>&nbsp;");
 				}
 			}
 			t = 0;
